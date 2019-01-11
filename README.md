@@ -1,5 +1,5 @@
 # next-deep-clone
-> A fastest  deep clone implement
+> A fastest  deep clone implement.
 
 ## install:
 ```bash
