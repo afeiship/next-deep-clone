@@ -1,13 +1,33 @@
 {
-  "name": "deep-clone",
+  "name": "next-deep-clone",
   "version": "1.0.0",
-  "description": "A fastest  deep clone implement.",
-  "main": "index.js",
-  "repository": "git@github.com:afeiship/deep-clone.git",
-  "author": "feizheng <1290657123@qq.com>",
+  "description": "A fastest  deep clone implement",
+  "homepage": "https://github.com/afeiship/next-deep-clone",
+  "author": {
+    "name": "afei",
+    "email": "1290657123@qq.com"
+  },
+  "scripts": {
+    "build": "gulp",
+    "test": "jest",
+    "version": "gulp bump"
+  },
+  "main": "dist/next-deep-clone.js",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^3.2.0",
-    "root-path": "afeiship/root-path"
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.7.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.1.0",
+    "gulp-uglify": "^2.1.2",
+    "jest": "^23.6.0",
+    "yargs": "^4.7.1",
+    "prettier": "^1.14.3"
+  },
+  "dependencies": {
+    "next-js-core2": "github:afeiship/next-js-core2"
   }
 }

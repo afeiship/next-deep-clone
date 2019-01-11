@@ -1,0 +1,28 @@
+{
+  "name": "next-deep-clone",
+  "version": "0.0.1",
+  "description": "A fastest  deep clone implement",
+  "main": "dist/next-deep-clone.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/next-deep-clone",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "build",
+    "src",
+    "gulp",
+    "gulpfile.js"
+  ]
+}
