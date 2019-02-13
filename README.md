@@ -8,6 +8,8 @@ npm install -S afeiship/next-deep-clone --registry=https://registry.npm.taobao.o
 
 ## usage:
 ```js
+import 'next-deep-clone';
+
 var obj = { email: '1290657123@qq.com' };
 nx.deepClone(obj);
 
