@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/next-deep-clone",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A fastest deep clone implement.",
   "homepage": "https://github.com/afeiship/next-deep-clone",
   "author": {
