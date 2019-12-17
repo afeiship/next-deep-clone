@@ -1,7 +1,7 @@
 {
   "name": "next-deep-clone",
-  "version": "1.0.0",
-  "description": "A fastest  deep clone implement.",
+  "version": "0.0.1",
+  "description": "nextBoilerplatePackageDescription",
   "main": "dist/next-deep-clone.js",
   "authors": [
     "afei"

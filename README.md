@@ -1,17 +1,14 @@
 # next-deep-clone
-> A fastest  deep clone implement.
+> A fastest deep clone implement.
 
-## install:
+## installation
 ```bash
-npm install -S afeiship/next-deep-clone --registry=https://registry.npm.taobao.org
+npm install -S @feizheng/next-deep-clone
 ```
 
-## usage:
+## usage
 ```js
-import 'next-deep-clone';
+import '@feizheng/next-deep-clone';
 
-var obj = { name: 'afei' };
-nx.deepClone(obj);
-
-// { name: 'afei' }
+//DOCS here!
 ```
