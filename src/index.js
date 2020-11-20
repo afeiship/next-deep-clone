@@ -1,11 +1,11 @@
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var ARRAY_TYPE = '[object Array]';
   var OBJECT = 'object';
   var toString = Object.prototype.toString;
 
-  nx.deepClone = function(inObject) {
+  nx.deepClone = function (inObject) {
     var result;
 
     //null/undefind/false or other primitive vaule:
@@ -16,7 +16,7 @@
     //array:
     if (ARRAY_TYPE === toString.apply(inObject)) {
       result = [];
-      nx.forEach(inObject, function(value, i) {
+      nx.forEach(inObject, function (value, i) {
         result[i] = nx.deepClone(value);
       });
       return result;
@@ -24,7 +24,7 @@
 
     //object:
     result = {};
-    nx.forIn(inObject, function(key, value) {
+    nx.forIn(inObject, function (key, value) {
       result[key] = nx.deepClone(value);
     });
     return result;

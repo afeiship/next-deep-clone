@@ -1,20 +1,20 @@
 /*!
- * name: @feizheng/next-deep-clone
+ * name: @jswork/next-deep-clone
  * description: A fastest deep clone implement.
- * url: https://github.com/afeiship/next-deep-clone
+ * homepage: https://github.com/afeiship/next-deep-clone
  * version: 1.0.0
- * date: 2019-12-17 11:36:32
+ * date: 2020-11-20 13:44:23
  * license: MIT
  */
 
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var ARRAY_TYPE = '[object Array]';
   var OBJECT = 'object';
   var toString = Object.prototype.toString;
 
-  nx.deepClone = function(inObject) {
+  nx.deepClone = function (inObject) {
     var result;
 
     //null/undefind/false or other primitive vaule:
@@ -25,7 +25,7 @@
     //array:
     if (ARRAY_TYPE === toString.apply(inObject)) {
       result = [];
-      nx.forEach(inObject, function(value, i) {
+      nx.forEach(inObject, function (value, i) {
         result[i] = nx.deepClone(value);
       });
       return result;
@@ -33,7 +33,7 @@
 
     //object:
     result = {};
-    nx.forIn(inObject, function(key, value) {
+    nx.forIn(inObject, function (key, value) {
       result[key] = nx.deepClone(value);
     });
     return result;
@@ -43,5 +43,3 @@
     module.exports = nx.deepClone;
   }
 })();
-
-//# sourceMappingURL=next-deep-clone.js.map
