@@ -3,7 +3,7 @@
  * description: A fastest deep clone implement.
  * homepage: https://github.com/afeiship/next-deep-clone
  * version: 1.0.0
- * date: 2020-11-20 13:44:23
+ * date: 2020-11-20 13:45:15
  * license: MIT
  */
 
