@@ -1,3 +1,3 @@
 interface NxStatic {
-  // your codes goes here.
+  deepClone: (target: any) => any;
 }
