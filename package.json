@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-deep-clone",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A fastest deep clone implement.",
   "homepage": "https://js.work",
   "author": {
@@ -43,5 +43,10 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "keywords": [
+    "next",
+    "clone",
+    "deep"
+  ]
 }
