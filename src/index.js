@@ -1,36 +1,35 @@
-(function () {
-  var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@jswork/next');
-  var ARRAY_TYPE = '[object Array]';
-  var OBJECT = 'object';
-  var toString = Object.prototype.toString;
+import nx from '@jswork/next';
 
-  nx.deepClone = function (inObject) {
-    var result;
+const OBJECT = 'object';
 
-    //null/undefind/false or other primitive vaule:
-    if (typeof inObject !== OBJECT || !inObject) {
-      return inObject;
-    }
+nx.deepClone = function (inObject) {
+  let result;
 
-    //array:
-    if (ARRAY_TYPE === toString.apply(inObject)) {
-      result = [];
-      nx.forEach(inObject, function (value, i) {
-        result[i] = nx.deepClone(value);
-      });
-      return result;
-    }
+  //null/undefind/false or other primitive vaule:
+  if (typeof inObject !== OBJECT || !inObject) {
+    return inObject;
+  }
 
-    //object:
-    result = {};
-    nx.forIn(inObject, function (key, value) {
-      result[key] = nx.deepClone(value);
+  //array:
+  if (Array.isArray(inObject)) {
+    result = [];
+    nx.forEach(inObject, function (value, i) {
+      result[i] = nx.deepClone(value);
     });
     return result;
-  };
-
-  if (typeof module !== 'undefined' && module.exports) {
-    module.exports = nx.deepClone;
   }
-})();
+
+  //object:
+  result = {};
+  nx.forIn(inObject, function (key, value) {
+    result[key] = nx.deepClone(value);
+  });
+
+  return result;
+};
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = nx.deepClone;
+}
+
+export default nx.deepClone;
