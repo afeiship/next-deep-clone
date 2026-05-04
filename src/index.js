@@ -28,8 +28,8 @@ nx.deepClone = function (inObject) {
   return result;
 };
 
-if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
-  module.exports = nx.deepClone;
-}
+// if (typeof module !== 'undefined' && module.exports && typeof wx === 'undefined') {
+//   module.exports = nx.deepClone;
+// }
 
 export default nx.deepClone;
